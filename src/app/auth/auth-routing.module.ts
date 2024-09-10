@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutPagesComponent } from './Pages/layout-pages/layout-pages.component';
 import { LoginPagesComponent } from './Pages/login-pages/login-pages.component';
-import { NewPageComponent } from '../heroes/Pages/new-page/new-page.component';
+import { RegisterPagesComponent } from './Pages/register-pages/register-pages.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
         path: 'login', component: LoginPagesComponent
       },
       {
-        path: 'new-account', component: NewPageComponent
+        path: 'new-account', component: RegisterPagesComponent
       },
       {
         path: '**', redirectTo: 'login'
